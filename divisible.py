@@ -1,9 +1,9 @@
 def is_divisible(num1, num2):
     ans = num1 % num2
-    if ans == 1:
-        return False
-    else:
+    if ans == 0:
         return True
+    else:
+        return False
 
     """
     Checks to see if one number is evenly divisible by the second
@@ -19,10 +19,10 @@ def main():
     # Get the two pieces of input from the user.
     num1 = int(input("What is the first number? "))
     num2 = int(input("What is the second number? "))
-    is_divisible(num1, num2)
-    if False:
+
+    if is_divisible(num1, num2) == False:
         print(num1, "is not easily divisible by", num2)
-    elif True:
+    else:
         print(num1, "is divisible by", num2)
 
 
