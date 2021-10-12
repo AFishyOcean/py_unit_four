@@ -32,7 +32,11 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual("You win!", rock_paper_scissors.who_wins(3, 2))
         self.assertEqual("It is a tie", rock_paper_scissors.who_wins(1, 1))
 
-    
+    def test_assignment_four(self):
+        self.assertGreaterEqual(5, assignment_four.genMax1(5))
+        self.assertGreaterEqual(5, assignment_four.genMax2(5))
+        self.assert
+
 
 if __name__ == '__main__':
     unittest.main()
