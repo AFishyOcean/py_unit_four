@@ -1,3 +1,6 @@
+# David Jones
+# 10/14/2021
+# This code provides a randomized equation based on given parameters
 import random
 def get_type():
     """
