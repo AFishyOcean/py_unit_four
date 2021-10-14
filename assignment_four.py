@@ -1,7 +1,7 @@
 import random
 def get_type():
     """
-    asks for the type of problem the person wants to do
+    asks for the type of problem the person wants to do then returns the reply
     :return:
     """
     type = input("Enter the symbol for the type of problem you would like:")
@@ -18,22 +18,14 @@ def get_max():
     """
     max = int(input("What would you like for the max range to be"))
     return max
-def genMax1(m):
+def genNum(m):
     """
     generates random number with the max
-    :param m:
-    :return:
+    :param m: highest possible number
+    :return: returns a number between 0 and the max
     """
-    num1 = random.randint(0, m)
-    return num1
-def genMax2(m):
-    """
-    generates random number with the max
-    :param m:
-    :return:
-    """
-    num2 = random.randint(0, m)
-    return num2
+    num = random.randint(0, m)
+    return num
 def problem(t, num1, num2):
     """
     plugs generated numbers into certain equations based on the asked type of problem
@@ -68,8 +60,8 @@ def main():
     """
     t = get_type()
     m = get_max()
-    num1 = genMax1(m)
-    num2 = genMax2(m)
+    num1 = genNum(m)
+    num2 = genNum(m)
     problem(t, num1, num2)
 
 

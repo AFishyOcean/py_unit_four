@@ -33,9 +33,10 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual("It is a tie", rock_paper_scissors.who_wins(1, 1))
 
     def test_assignment_four(self):
-        self.assertGreaterEqual(5, assignment_four.genMax1(5))
-        self.assertGreaterEqual(5, assignment_four.genMax2(5))
-        self.assert
+        self.assertGreaterEqual(5, assignment_four.genNum(5))
+        self.assertGreaterEqual(10, assignment_four.genNum(10))
+        problem = assignment_four.get_type()
+        self.assertTrue(problem == "+" or problem == "-" or problem == "*")
 
 
 if __name__ == '__main__':
